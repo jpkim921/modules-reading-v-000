@@ -6,6 +6,10 @@ class Kid
   # The include keyword allows our classes to use all of the methods of the included module as instance methods.
   include Dance
 
+  extend Kid
+    extend MetaDancing
+  end
+
   attr_accessor :name
 
   def initialize(name)
