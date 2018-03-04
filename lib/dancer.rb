@@ -6,4 +6,10 @@ class Dancer
   # The include keyword allows our classes to use all of the methods of the included module as instance methods.
   include Dance
 
+      attr_accessor :name
+
+      def initialize(name)
+        @name = name
+      end
+
 end
