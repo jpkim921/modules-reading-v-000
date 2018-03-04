@@ -10,7 +10,7 @@ class Kid
   # extend MetaDancing
 
 
-  # define one module and specify which methods were intended as class methods and which methods as instance methods
+  # 3. define one module and specify which methods were intended as class methods and which methods as instance methods
   extend FancyDance::ClassMethods
   include FancyDance::InstanceMethods
 
