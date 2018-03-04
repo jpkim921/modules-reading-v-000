@@ -2,14 +2,15 @@ require_relative './class_methods_module.rb'
 require_relative './dance_module.rb'
 
 class Dancer
-  # # To lend our two classes (Kid/Dancer) all of the methods of the Dance module, we use the include keyword
+  # # 1. To lend our two classes (Kid/Dancer) all of the methods of the Dance module, we use the include keyword
   # # The include keyword allows our classes to use all of the methods of the included module as instance methods.
   # include Dance
   #
-  # # In order to lend a module's methods to a class as class methods, we use the extend keyword
+  # # 2. In order to lend a module's methods to a class as class methods, we use the extend keyword
   # extend MetaDancing
 
 
+  # 3. define one module and specify which methods were intended as class methods and which methods as instance methods
   extend FancyDance::ClassMethods
   include FancyDance::InstanceMethods
 
